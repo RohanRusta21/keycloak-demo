@@ -33,9 +33,18 @@ helm repo update
 ```
 
 ```bash
-helm install keycloak1 codecentric/keycloak --values mykeycloak.yml (keycloak1=New Release)
+helm install keycloak codecentric/keycloak --values mykeycloak.yml (keycloak1=New Release)
 ```
 
 ```bash
 kubectl edit svc keycloak-http
+```
+
+# Add initial credentials for keycloak (Inside extraenv section)
+
+```bash
+- name: KEYCLOAK_USER
+  value: admin
+- name: KEYCLOAK_PASSWORD
+  value: admin
 ```
