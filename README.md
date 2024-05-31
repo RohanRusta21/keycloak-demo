@@ -25,3 +25,13 @@ helm show values codecentric/keycloak > mykeycloak.yml (you can give any name)
 persistence:
   existingClaim: Keycloak-volume
 ```
+
+# Update the helm repo chart
+
+```bash
+helm repo update
+```
+
+```bash
+helm install keycloak1 codecentric/keycloak (keycloak1=New Release)
+```
