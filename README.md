@@ -12,7 +12,7 @@ helm repo list
 ```
 
 ```bash
-helm install keycloak codecentric/keycloak --values codecentric.yaml
+helm install keycloak codecentric/keycloak
 ```
 
 ```bash
@@ -33,5 +33,9 @@ helm repo update
 ```
 
 ```bash
-helm install keycloak1 codecentric/keycloak (keycloak1=New Release)
+helm install keycloak1 codecentric/keycloak --values mykeycloak.yml (keycloak1=New Release)
+```
+
+```bash
+kubectl edit svc keycloak-http
 ```
