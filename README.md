@@ -33,7 +33,7 @@ helm repo update
 ```
 
 ```bash
-helm install keycloak codecentric/keycloak --values mykeycloak.yml (keycloak1=New Release)
+helm install keycloak codecentric/keycloak --values mykeycloak.yml (keycloak=Release Name)
 ```
 
 ```bash
